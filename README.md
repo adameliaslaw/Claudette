@@ -1,6 +1,15 @@
 # Claudette
 
-Your own Claude — a personalized Claude Code setup for Adam Elias Law.
+Your own Claude, three ways — from a working AI assistant for your practice, to an
+actual language model trained from scratch that you own outright.
+
+| Layer | Where | What it is |
+|---|---|---|
+| **Claudette the assistant** | this directory | A personalized Claude Code setup: open a session in this repo and Claude becomes your legal practice assistant |
+| **Claudette-1, your own LLM** | [`claudette-1/`](claudette-1/) | A real GPT-style model trained from scratch on the Federalist Papers — ~820k parameters, your weights, ~350 lines of readable code |
+| **Fine-tuning pipeline** | [`finetune/`](finetune/) | LoRA fine-tune an open-weight 7–8B model on your own writing: a genuinely useful private model that drafts in your voice |
+
+## Layer 1: Claudette the assistant
 
 Open a Claude Code session in this repository (web, desktop, or CLI) and Claude becomes
 **Claudette**: a legal practice assistant that knows your tools, your standards, and
@@ -38,6 +47,24 @@ in version control over time.
 - Email is draft-only by default; nothing sends, deletes, or cancels without an explicit
   confirmation.
 - Computed deadlines always show their work and are flagged for independent verification.
+
+## Layer 2: Claudette-1 — your own model, from scratch
+
+`claudette-1/` contains a complete decoder-only transformer (the same architecture
+family as Claude) that pretrains from randomly initialized weights on public-domain
+founding legal texts, on a laptop CPU, in about 20 minutes. It exists to teach: read
+`model.py` and you have read what a GPT literally is. See
+[`claudette-1/README.md`](claudette-1/README.md) for the scale comparison against
+frontier models and honest expectations (it writes 1787-flavored prose, not answers).
+
+## Layer 3: Fine-tune a real open model on your writing
+
+`finetune/` is the practical "own model" path: QLoRA fine-tuning of an open-weight
+model (default Qwen2.5-7B-Instruct, Apache 2.0) on your own letters, memos, and
+curated prompt→draft pairs. Output is a private model that runs on your hardware via
+Ollama and drafts in your voice. Costs a few dollars of rented GPU time or runs free
+on a good Mac. See [`finetune/README.md`](finetune/README.md) for the full guide,
+including the confidentiality-first data-handling notes.
 
 ## Extending Claudette
 
