@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Descrybe_Legal_Engine",
+      "mcp__Trellis",
+      "mcp__Courtroom5",
+      "mcp__Legal_Data_Hunter",
+      "mcp__Gmail__search_threads",
+      "mcp__Gmail__get_thread",
+      "mcp__Gmail__get_message",
+      "mcp__Gmail__list_labels",
+      "mcp__Gmail__list_drafts",
+      "mcp__Google_Calendar__list_calendars",
+      "mcp__Google_Calendar__list_events",
+      "mcp__Google_Calendar__search_events",
+      "mcp__Google_Calendar__get_event",
+      "mcp__Google_Drive__search_files",
+      "mcp__Google_Drive__read_file_content",
+      "mcp__Google_Drive__get_file_metadata",
+      "mcp__Google_Drive__list_recent_files",
+      "mcp__Jotform__get_submissions",
+      "mcp__Jotform__analyze_submissions",
+      "mcp__Jotform__search"
+    ],
+    "deny": [
+      "mcp__Superhuman_Mail__send_draft",
+      "mcp__Superhuman_Mail__trash_thread",
+      "mcp__Superhuman_Mail__mark_spam",
+      "mcp__Google_Calendar__delete_event"
+    ]
+  }
+}
