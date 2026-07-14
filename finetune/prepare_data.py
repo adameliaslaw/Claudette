@@ -115,7 +115,9 @@ def main():
     val, train = examples[:n_val], examples[n_val:]
 
     args.out.mkdir(parents=True, exist_ok=True)
-    for name, rows in (("train.jsonl", train), ("val.jsonl", val)):
+    # val.jsonl is read by train_lora.py; valid.jsonl is the same data under
+    # the filename Apple's MLX tooling (mlx_lm.lora) expects
+    for name, rows in (("train.jsonl", train), ("val.jsonl", val), ("valid.jsonl", val)):
         with open(args.out / name, "w", encoding="utf-8") as f:
             for row in rows:
                 f.write(json.dumps(row, ensure_ascii=False) + "\n")

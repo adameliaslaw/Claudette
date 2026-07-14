@@ -1,5 +1,10 @@
 # Fine-tuning: your own *useful* model
 
+> **On a Mac and new to all this?** Skip straight to **[MAC_GUIDE.md](MAC_GUIDE.md)** —
+> a step-by-step walkthrough written for a first-time Terminal user, from installation
+> to training to daily use. The rest of this README covers the NVIDIA/rented-GPU route
+> and the background that applies to both.
+
 Claudette-1 (in `../claudette-1/`) teaches you how LLMs work. This directory is the
 practical path: take a strong open-weight model that already speaks fluent English and
 reasons decently, and fine-tune it on **your** writing so it drafts like you — a model
@@ -25,7 +30,7 @@ intact.
 |---|---|---|---|
 | Rented GPU | RunPod / Lambda / Vast.ai, one 24 GB GPU (e.g. A10G, RTX 4090) | ~$0.30–0.80/hr, a run is 1–4 hrs | Easiest. Destroy the instance after; adapters download in seconds. |
 | Your own machine | Any 24 GB NVIDIA GPU | electricity | Most private option. |
-| Apple Silicon Mac | M-series, 32 GB+ RAM | free | Use [MLX](https://github.com/ml-explore/mlx-examples/tree/main/llms) instead of these scripts (`mlx_lm.lora`) — same data format. |
+| Apple Silicon Mac | M-series, 16 GB+ RAM | free | **Recommended if you have one.** Uses Apple's MLX instead of these scripts — full plain-English walkthrough in [MAC_GUIDE.md](MAC_GUIDE.md), from Terminal basics to a finished model. |
 
 **Confidentiality note:** this pipeline is designed so client data stays on the training
 machine. If you rent a GPU, use a provider you're comfortable with, transfer data over

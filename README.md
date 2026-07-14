@@ -64,7 +64,10 @@ model (default Qwen2.5-7B-Instruct, Apache 2.0) on your own letters, memos, and
 curated prompt→draft pairs. Output is a private model that runs on your hardware via
 Ollama and drafts in your voice. Costs a few dollars of rented GPU time or runs free
 on a good Mac. See [`finetune/README.md`](finetune/README.md) for the full guide,
-including the confidentiality-first data-handling notes.
+including the confidentiality-first data-handling notes. **On an Apple Silicon Mac,
+start with [`finetune/MAC_GUIDE.md`](finetune/MAC_GUIDE.md)** — a complete
+plain-English walkthrough for non-technical users, from opening Terminal for the
+first time to chatting with your finished model.
 
 ## Extending Claudette
 
