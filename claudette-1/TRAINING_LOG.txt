@@ -1,0 +1,35 @@
+corpus: 1,175,526 tokens | train 1,116,749 | val 58,777 | vocab 77
+model: 819,584 parameters (4 layers, 4 heads, 128 wide)
+iter     0 | train 4.3534 | val 4.3492 |      5s
+iter   250 | train 2.3141 | val 2.3730 |     57s
+iter   500 | train 1.9462 | val 2.0424 |    108s
+iter   750 | train 1.6967 | val 1.8131 |    159s
+iter  1000 | train 1.5445 | val 1.6550 |    213s
+--- sample ---
+
+the and the
+sprident of the subliated of the pressive no not the power expressed admonan in
+the power have the predent coction with the collace disppacts and the
+will depresssion of than expedent of t
+--------------
+iter  1250 | train 1.4358 | val 1.5486 |    265s
+iter  1500 | train 1.3453 | val 1.4956 |    314s
+iter  1750 | train 1.2974 | val 1.4285 |    366s
+iter  2000 | train 1.2635 | val 1.4011 |    413s
+--- sample ---
+
+the people of the United States, when all same confederate excluded and
+spiret severed to on convention the admit not only impercious in for
+the number of our the contendsion of such excepts of the ca
+--------------
+iter  2250 | train 1.2342 | val 1.3648 |    462s
+iter  2500 | train 1.1906 | val 1.3377 |    513s
+iter  2750 | train 1.1793 | val 1.3332 |    562s
+iter  3000 | train 1.1757 | val 1.3597 |    614s
+--- sample ---
+
+as the pursent to objects the proposed judiciary possessed, in the diptation
+of the systems and imputately of a government. If wese the officers
+and government its on the moderate reasons a legard, th
+--------------
+done. best val loss 1.3332; checkpoint at /home/user/Claudette/claudette-1/checkpoints/claudette1.pt

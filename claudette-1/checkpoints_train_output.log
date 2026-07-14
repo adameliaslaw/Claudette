@@ -1,8 +1,0 @@
-/usr/local/lib/python3.11/dist-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
-  cpu = _conversion_method_template(device=torch.device("cpu"))
-corpus: 1,175,526 tokens | train 1,116,749 | val 58,777 | vocab 77
-model: 819,584 parameters (4 layers, 4 heads, 128 wide)
-iter     0 | train 4.3534 | val 4.3492 |      5s
-iter   250 | train 2.3141 | val 2.3730 |     57s
-iter   500 | train 1.9462 | val 2.0424 |    108s
-iter   750 | train 1.6967 | val 1.8131 |    159s
