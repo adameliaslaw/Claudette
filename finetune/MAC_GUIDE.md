@@ -12,8 +12,24 @@ own, the same way you own a Word document.
 **What you need:**
 - A Mac with an Apple Silicon chip (any M1, M2, M3, or M4 — every Mac sold since 2021)
 - Ideally 16 GB of memory or more (check:  → About This Mac). 8 GB works with the
-  smaller model noted in Step 4.
+  smaller model noted below; 24 GB or more comfortably runs everything in this guide,
+  including the larger 14B model.
 - About 10 GB of free disk space and an hour, most of it waiting.
+
+**Pick your model size once, up front.** Every command below is written with the
+16 GB default, `mlx-community/Qwen2.5-7B-Instruct-4bit`. If your Mac is in a different
+row, swap that name for yours *everywhere it appears* — it's the only thing that ever
+changes:
+
+| Your Mac's memory | Model to use | Character |
+|---|---|---|
+| 8 GB | `mlx-community/Qwen2.5-3B-Instruct-4bit` | Light but limited |
+| 16 GB | `mlx-community/Qwen2.5-7B-Instruct-4bit` | The solid default (used in the commands below) |
+| 24 GB+ | `mlx-community/Qwen2.5-14B-Instruct-4bit` | Noticeably smarter; bigger download (~8.5 GB) and roughly twice the training time |
+
+On a 24 GB Mac the 14B is the one to want — meaningfully better drafting and
+instruction-following for the same effort. If its training time tries your patience,
+the 7B is a fine fallback; everything else in the guide is identical.
 
 ---
 
@@ -112,8 +128,8 @@ it. The download happens once; after that it loads from disk in seconds.
 mlx_lm.chat --model mlx-community/Qwen2.5-7B-Instruct-4bit
 ```
 
-*(On an 8 GB Mac use `mlx-community/Qwen2.5-3B-Instruct-4bit` instead — here and
-everywhere the model name appears below.)*
+*(Different memory tier? This is the first place to make the model-name swap from the
+table in "What you need." On 24 GB: `mlx-community/Qwen2.5-14B-Instruct-4bit`.)*
 
 When `>>` appears, type a message and press Return. Ask it anything — draft a
 paragraph, explain a concept, summarize something you paste in. When you're done, type
